@@ -1,4 +1,4 @@
-export function llenarMotos(){
+function llenarYamaha(){
 
     let yamaha=[
         {nombre:"Dt 125",precio:7000000,modelo:"Modelo 2006",foto:"../img/Yamaha/dt-125.jpg"},
@@ -17,7 +17,9 @@ export function llenarMotos(){
         {nombre:"Xt 500",precio:25000000,modelo:"Modelo 1980",foto:"../img/Yamaha/Yamaha-Xt-500-.jpg"}
     ]
 
-    let fila=document.getElementById("fila")
+    
+
+    let filaY=document.getElementById("filaY")
     yamaha.forEach(function(yamaha){
 
         let columna=document.createElement("div")
@@ -55,7 +57,10 @@ export function llenarMotos(){
         tarjeta.appendChild(precioMoto)
         
         columna.appendChild(tarjeta)
-        fila.appendChild(columna)
+        filaY.appendChild(columna)
 
     })
+
+    
 }
+llenarYamaha()
